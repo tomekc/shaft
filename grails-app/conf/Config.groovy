@@ -2,7 +2,7 @@
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
 
-grails.config.locations = [ "classpath:PivotalConfig.groovy" ]
+grails.config.locations = [ PivotalConfig ]
 
 // grails.config.locations = [ "classpath:${appName}-config.properties",
 //                             "classpath:${appName}-config.groovy",

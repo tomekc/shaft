@@ -15,12 +15,9 @@
 <body>
 
 	<h2>Projects</h2>
-<pre>	
-	Token ${grailsApplication.config.pivotal}
-	
-	${grailsApplication.config.grails.config}
 
-</pre>
+	
+
 
 </body>
 </html>
