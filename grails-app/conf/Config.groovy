@@ -2,6 +2,8 @@
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
 
+grails.config.locations = [ "classpath:PivotalConfig.groovy" ]
+
 // grails.config.locations = [ "classpath:${appName}-config.properties",
 //                             "classpath:${appName}-config.groovy",
 //                             "file:${userHome}/.grails/${appName}-config.properties",
@@ -68,6 +70,10 @@ environments {
         // TODO: grails.serverURL = "http://www.changeme.com"
     }
 }
+
+
+pivotal.uri = "http://www.pivotaltracker.com/services/v3"
+// place user token in pivotal-config.groovy
 
 // log4j configuration
 log4j = {

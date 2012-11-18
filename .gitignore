@@ -8,3 +8,5 @@
 /data/
 /*.db
 *.log
+
+grails-app/conf/PivotalConfig.groovy
