@@ -15,12 +15,29 @@
 <body>
 
 	<h2>Projects</h2>
-    ${name}
-    ${grailsApplication.config.pivotal.token}
-	
-    <pre>
-    ${xml}
-    </pre>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Project</th>
+            <th>Last activity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <g:each in="${projects}">
+            <tr>
+                <td><g:link controller="project" id="${it.id}"> ${it.name}</g:link></td>
+                <td>${it.last_activity_at}</td>
+            </tr>
+        </g:each>
+
+
+
+        </tbody>
+
+    </table>
+
+
 
 
 </body>

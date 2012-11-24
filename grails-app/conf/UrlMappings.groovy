@@ -7,7 +7,11 @@ class UrlMappings {
 			}
 		}
 
-		"/"(controller: "dashboard", view:"/index")
+        "/project/$id" (controller: "project")
+
+
+
+		"/" (controller: "dashboard", view:"/index")
 
 
 		"500"(view:'/error')
