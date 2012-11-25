@@ -12,7 +12,7 @@ grails.project.dependency.resolution = {
         // specify dependency exclusions here; for example, uncomment this to disable ehcache:
         // excludes 'ehcache'
     }
-    log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+    log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
 
     repositories {
@@ -51,7 +51,7 @@ grails.project.dependency.resolution = {
 
         build ":tomcat:$grailsVersion"
 
-        runtime ":database-migration:1.1"
+//        runtime ":database-migration:1.1"
 
         compile ':cache:1.0.0'
         compile ":rest-client-builder:1.0"
